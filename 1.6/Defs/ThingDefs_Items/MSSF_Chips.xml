@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <ThingDef ParentName="ResourceBase">
+        <defName>MSSF_PlatinumChipReal</defName>
+        <label>The Platinum Chip</label>
+        <description>A hyper-advanced computer chip disguised as a simple chip. Capable of storing an extraordinary amount of data, in the hands of a skilled mechanitor this chip could be utilised as a powerful robotic upgrade.</description>
+        <graphicData>
+            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>6500</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.2</Mass>
+        <Flammability>0.0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Ultra</techLevel>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>
