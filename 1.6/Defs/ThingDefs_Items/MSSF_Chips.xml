@@ -4,8 +4,9 @@
         <defName>MSSF_PlatinumChipReal</defName>
         <label>The Platinum Chip</label>
         <description>A hyper-advanced computer chip disguised as a simple chip. Capable of storing an extraordinary amount of data, in the hands of a skilled mechanitor this chip could be utilised as a powerful robotic upgrade.</description>
+        <thingClass>ThingWithComps</thingClass>
         <graphicData>
-            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <texPath>Things/Item/Chips/PlatinumChip/PlatinumChip</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -22,6 +23,23 @@
         <thingCategories>
             <li>ItemsMisc</li>
         </thingCategories>
+        <comps>
+            <li Class="MSSFP.Comps.CompProperties_GameConditionOnUse">
+                <label>Use The Platinum Chip</label>
+                <description>Use The Platinum Chip on a mech to activate the broad-band synchronisation to unlock enhancements.</description>
+                <iconPath>Things/Item/Chips/PlatinumChip/PlatinumChip</iconPath>
+                <condition>MSSF_EnhancedMechs</condition>
+                
+                <consumeOnUse>true</consumeOnUse>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>true</canTargetMechs>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetSubhumans>false</canTargetSubhumans>
+                <canTargetEntities>false</canTargetEntities>
+                <canTargetBloodfeeders>false</canTargetBloodfeeders>
+                <mustTargetPlayerFaction>true</mustTargetPlayerFaction>
+            </li>
+        </comps>
         <drawGUIOverlay>false</drawGUIOverlay>
         <tradeability>Sellable</tradeability>
         <techLevel>Ultra</techLevel>
@@ -35,7 +53,7 @@
         <label>Platinum Chip</label>
         <description>A basic computer chip disguised as a simple chip. Capable of storing an minimal amount of data. Not paricularly useful, but looks cool.</description>
         <graphicData>
-            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <texPath>Things/Item/Chips/PlatinumChip/PlatinumChip</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -61,11 +79,11 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>MSSF_FakePlatinumChip</defName>
+        <defName>MSSF_PaintedPlatinumChip</defName>
         <label>"Platinum" Chip</label>
         <description>A basic computer chip disguised as a simple chip. It's been shoddily painted a platinum-adjacent colour. Capable of storing an minimal amount of data. Not paricularly useful, but looks cool.</description>
         <graphicData>
-            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <texPath>Things/Item/Chips/PlatinumChip/PlatinumChip</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -91,11 +109,11 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>MSSF_PlatinumChip</defName>
+        <defName>MSSF_FakePlatinumChip</defName>
         <label>Platinum "Chip"</label>
         <description>A knock-off of a Platinum chip. Doesn't do anything.</description>
         <graphicData>
-            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <texPath>Things/Item/Chips/PlatinumChip/PlatinumChip</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -125,7 +143,7 @@
         <label>Platinum Clip</label>
         <description>A money clip, made to resemble a platinum chip.</description>
         <graphicData>
-            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <texPath>Things/Item/Chips/PlatinumChip/PlatinumChip</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <resourceReadoutPriority>Middle</resourceReadoutPriority>

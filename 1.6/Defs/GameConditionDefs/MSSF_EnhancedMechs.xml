@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GameConditionDef>
+        <defName>MSSF_EnhancedMechs</defName>
+        <conditionClass>MSSFP.BuffGameCondition</conditionClass>
+        <label>mechs enhanced</label>
+        <description>Your mechanoids have been greatly enhanced.</description>
+        <letterText>After activating The Platinum Chip, advanced algorithms hidden deep within your mechanoids cores have been activated, enabling greatly enhanced functioning.</letterText>
+        <letterDef>PositiveEvent</letterDef>
+        <canBePermanent>true</canBePermanent>
+        <natural>false</natural>
+        <allowUnderground>true</allowUnderground>
+        <modExtensions>
+            <li Class="MSSFP.ModExtensions.GameConditionModExtension"> 
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetMechs>true</canTargetMechs>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetSubhumans>false</canTargetSubhumans>
+                <canTargetEntities>false</canTargetEntities>
+                <canTargetBloodfeeders>false</canTargetBloodfeeders>
+                <mustTargetPlayerFaction>true</mustTargetPlayerFaction>
+                <hediffsToApply>
+                    <li>MSSF_EnhancedMechs</li>
+                </hediffsToApply>
+            </li>
+        </modExtensions>
+    </GameConditionDef>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>MSSF_EnhancedMechs</defName>
+        <label>platinum enhancement</label>
+        <description>The Platinum Chip has unlocked deep enhancements in this mechs programming</description>
+        <isBad>false</isBad>
+        <everCurableByItem>false</everCurableByItem>
+        <stages>
+            <li>
+                <label>Enhancement</label>
+                <statOffsets/>
+                <statFactors>
+                    <IncomingDamageFactor>0.5</IncomingDamageFactor>
+                    <MeleeDamageFactor>1.5</MeleeDamageFactor>
+                    <MoveSpeed>1.5</MoveSpeed>
+                    <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+                    <BandwidthCost>0.5</BandwidthCost>
+                    <ControlTakingTime>0.5</ControlTakingTime>
+                    <MechEnergyUsageFactor>0.5</MechEnergyUsageFactor>
+                    <MechEnergyLossPerHP>0.5</MechEnergyLossPerHP>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>
