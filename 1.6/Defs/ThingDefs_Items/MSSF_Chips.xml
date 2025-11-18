@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <ThingDef ParentName="ResourceBase">
         <defName>MSSF_PlatinumChipReal</defName>
@@ -17,7 +17,127 @@
             <MarketValue>6500</MarketValue>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>0.2</Mass>
-        <Flammability>0.0</Flammability>
+            <Flammability>0.0</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Ultra</techLevel>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>MSSF_PlatinumChip</defName>
+        <label>Platinum Chip</label>
+        <description>A basic computer chip disguised as a simple chip. Capable of storing an minimal amount of data. Not paricularly useful, but looks cool.</description>
+        <graphicData>
+            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>100</MarketValue>
+            <MaxHitPoints>1</MaxHitPoints>
+            <Mass>0.001</Mass>
+            <Flammability>0.25</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Ultra</techLevel>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>MSSF_FakePlatinumChip</defName>
+        <label>"Platinum" Chip</label>
+        <description>A basic computer chip disguised as a simple chip. It's been shoddily painted a platinum-adjacent colour. Capable of storing an minimal amount of data. Not paricularly useful, but looks cool.</description>
+        <graphicData>
+            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>1</MarketValue>
+            <MaxHitPoints>1</MaxHitPoints>
+            <Mass>0.001</Mass>
+            <Flammability>0.25</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Ultra</techLevel>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>MSSF_PlatinumChip</defName>
+        <label>Platinum "Chip"</label>
+        <description>A knock-off of a Platinum chip. Doesn't do anything.</description>
+        <graphicData>
+            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>1</MarketValue>
+            <MaxHitPoints>1</MaxHitPoints>
+            <Mass>0.001</Mass>
+            <Flammability>0.25</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Ultra</techLevel>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>MSSF_PlatinumClip</defName>
+        <label>Platinum Clip</label>
+        <description>A money clip, made to resemble a platinum chip.</description>
+        <graphicData>
+            <texPath>Things/Item/Chips/PlatinumChip</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>100</MarketValue>
+            <MaxHitPoints>1</MaxHitPoints>
+            <Mass>0.001</Mass>
+            <Flammability>0.25</Flammability>
         </statBases>
         <thingCategories>
             <li>ItemsMisc</li>
