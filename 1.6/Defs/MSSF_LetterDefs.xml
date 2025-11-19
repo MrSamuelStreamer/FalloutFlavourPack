@@ -2,12 +2,12 @@
 <Defs>
     <LetterDef ParentName="NegativeEvent">
         <defName>GDFP_DeathQuestionMark</defName>
-        <letterClass>GDFP.DeathLetter</letterClass>
+        <letterClass>MSSFP.Letters.DeathLetter</letterClass>
     </LetterDef>
 
     <LetterDef ParentName="PositiveEvent">
         <defName>GDFP_MapAuthor</defName>
-        <letterClass>GDFP.AuthorLetter</letterClass>
+        <letterClass>MSSFP.Letters.AuthorLetter</letterClass>
     </LetterDef>
 
     <LetterDef ParentName="PositiveEvent">
@@ -20,7 +20,7 @@
         <flashColor>(160, 170, 180)</flashColor>
         <flashInterval>90</flashInterval>
         <arriveSound>LetterArrive</arriveSound>
-        <letterClass>GDFP.AuthorLetter</letterClass>
+        <letterClass>MSSFP.Letters.AuthorLetter</letterClass>
     </LetterDef>
 
     <ThingDef>
@@ -51,6 +51,16 @@
                 <destroyOnRead>false</destroyOnRead>
             </li>
         </comps>
+
+        <modExtensions>
+            <li Class="MSSFP.ModExtensions.AutoSpawningModExtension">
+                <notBeforeTick>1</notBeforeTick>
+                <randomFuzzRange>10~600</randomFuzzRange>
+                <spawnedLetterType>GDFP_PostieLetter</spawnedLetterType>
+                <spawnedLetterLabel>Postie's been</spawnedLetterLabel>
+                <spawnedLetterText>Looks like the postie dropped off a letter</spawnedLetterText>
+            </li>
+        </modExtensions>
 
         <alwaysHaulable>true</alwaysHaulable>
         <drawGUIOverlay>true</drawGUIOverlay>
