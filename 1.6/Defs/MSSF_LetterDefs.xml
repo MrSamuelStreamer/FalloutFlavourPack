@@ -68,7 +68,7 @@
         <pathCost>14</pathCost>
 
         <graphicData>
-            <texPath>MSS_MysteriousLetter</texPath>
+            <texPath>MSS_CallingCard</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 
