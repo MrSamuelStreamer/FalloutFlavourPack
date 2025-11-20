@@ -58,7 +58,7 @@
                 <randomFuzzRange>10~600</randomFuzzRange>
                 <spawnedLetterType>GDFP_PostieLetter</spawnedLetterType>
                 <spawnedLetterLabel>Postie's been</spawnedLetterLabel>
-                <spawnedLetterText>Looks like the postie dropped off a letter</spawnedLetterText>
+                <spawnedLetterText>It was a simple delivery; carry an innocuous poker chip to a Currys in the Northern Capital, an easy trip by all accounts. But something was off, the tracking number was invalid, and you were told by head office to not just leave a red card and dash - this one was signed-for. \n\nEverything then was a blur. You hit the brakes and screech the van to a halt, a group of youths block the road, then only flashes of memory. A flatcap and a Brummie accent, a shovel, your hands filthy. And then a single gunshot... \n\nYou wake up to a robot dragging you out of a grave, stuffing your head with electronics and signals, and patching you up. But the package was gone. And this isn't Evri - time to get that parcel back.</spawnedLetterText>
             </li>
         </modExtensions>
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+    <v1.6>
+        <li>Common</li>
+        <li>1.6</li>
+        <li>RimThemes</li> <!-- unsure of loadfolder comp, will check -->
+        <li IfModActive="ludeon.rimworld.biotech">Compatibility/ludeon.rimworld.biotech/1.6</li>
+        <li IfModActive="rh2.faction.rangers">Compatibility/rh2.faction.rangers/1.6</li>
+    </v1.6>
+</loadFolders>

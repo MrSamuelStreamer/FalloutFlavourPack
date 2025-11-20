@@ -30,5 +30,7 @@
         <li>Ludeon.RimWorld.Anomaly</li>
         <li>Ludeon.RimWorld.Odyssey</li>
         <li>mss.flavourpack</li>
+        <li>ludeon.rimworld.biotech</li>
+        <li>rh2.faction.rangers</li>
     </loadAfter>
 </ModMetaData>
