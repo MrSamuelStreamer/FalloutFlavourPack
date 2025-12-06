@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Speed up -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/StatDef[defName="MechFormingSpeed"]/defaultBaseValue</xpath>
+		<value>
+			<defaultBaseValue>18</defaultBaseValue>
+		</value>
+	</Operation>
+
+	<!-- Sentry Bot Gunner -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="CentipedeGunner"]</xpath>
+		<value>
+			<ingredients></ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace"> <!-- I wrote it like this and cba to backspace the ingredients tags out of the patch, you need to grow up and accept this, yes I'm going to copy and paste it for the rest -->
+		<xpath>/Defs/RecipeDef[defName="CentipedeGunner"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>100</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentSpacer</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>NanostructuringChip</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SubcoreRegular</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+	<!-- Sentry Bot Explosive -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="CentipedeBlaster"]</xpath>
+		<value>
+			<ingredients></ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="CentipedeBlaster"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>100</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentSpacer</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>NanostructuringChip</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SubcoreRegular</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+	<!-- Sentry Bot Fire -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="CentipedeBurner"]</xpath>
+		<value>
+			<ingredients></ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="CentipedeBurner"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>100</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentSpacer</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>NanostructuringChip</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SubcoreRegular</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+	<!-- Cyberdog -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Legionary"]</xpath>
+		<value>
+			<ingredients></ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="Legionary"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>25</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentSpacer</li>
+						</thingDefs>
+					</filter>
+					<count>2</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SubcoreHigh</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+	<!-- Assaultron -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Tesseron"]</xpath>
+		<value>
+			<ingredients></ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="Tesseron"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>100</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentSpacer</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>PowerfocusChip</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SubcoreRegular</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+	<!-- Robobrain -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Centurion"]</xpath>
+		<value>
+			<ingredients></ingredients>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="Centurion"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Steel</li>
+						</thingDefs>
+					</filter>
+					<count>100</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>Plasteel</li>
+						</thingDefs>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>ComponentSpacer</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SubcoreHigh</li>
+						</thingDefs>
+					</filter>
+					<count>1</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+</Patch>
