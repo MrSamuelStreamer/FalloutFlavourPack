@@ -31,14 +31,14 @@
         <range>15.9</range>
         <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-        <soundCast>Shot_Shotgun</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCast>MSSF_Blobber_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>6</muzzleFlashScale>
       </li>
     </verbs>
   </ThingDef>
-
   
+
   <ThingDef ParentName="BaseBullet">
     <defName>MSSF_Bullet_Blobby</defName>
     <label>blobby blast</label>
@@ -54,8 +54,8 @@
       <speed>35</speed>
     </projectile>
   </ThingDef>
-
   
+
   <DamageDef Name="Bullet">
     <defName>MSSF_Bullet_Blobby</defName>
     <label>blobby blast</label>
@@ -70,8 +70,8 @@
     <isRanged>true</isRanged>
     <makesAnimalsFlee>true</makesAnimalsFlee>
   </DamageDef>
-
   
+
   <HediffDef ParentName="InjuryBase">
     <defName>MSSF_Blob</defName>
     <label>blobbed</label>
@@ -100,4 +100,23 @@
       <destroyedOutLabel>Blobbed out</destroyedOutLabel>
     </injuryProps>
   </HediffDef>
+
+
+  <SoundDef>
+    <defName>MSSF_Blobber_Fire</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+      <grains>
+        <li Class="AudioGrain_Folder">
+          <clipFolderPath>MSSF_BlobbyGun/Fire</clipFolderPath>
+        </li>
+      </grains>
+      <volumeRange>60~70</volumeRange>
+      <pitchRange>0.9311764~1.068824</pitchRange>
+      <distRange>0~70</distRange>
+      <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
 </Defs>
