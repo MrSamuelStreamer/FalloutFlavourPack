@@ -145,4 +145,114 @@
     </apparel>
   </ThingDef>
 
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MSSF_MechCoat</defName>
+    <description>A long duster coat for blocking the sun and grit of the outdoors, poorly stitched onto the back is a RobCo. robotics controller.</description>
+    <label>Postie's Mechaduster</label>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <researchPrerequisite>HighMechtech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>510</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Post_Duster/Post_Duster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.05</drawSize>
+    </graphicData>
+    <costList>
+      <Apparel_Duster>1</Apparel_Duster>
+      <Apparel_PackControl>1</Apparel_PackControl>
+    </costList>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>2</Mass>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Post_Duster/Post_Duster</wornGraphicPath>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>IndustrialAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MSSF_MechCoatUpgraded</defName>
+    <description>A long duster coat for blocking the sun and grit of the outdoors, poorly stitched onto the back is a RobCo. robotics controller and a wide band antenna.</description>
+    <label>Postie's Mechauniform</label>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <researchPrerequisite>HighMechtech</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <displayPriority>510</displayPriority>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Post_DusterUpgrade/Post_DusterUpgrade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.05</drawSize>
+    </graphicData>
+    <costList>
+      <MSSF_MechCoat>1</MSSF_MechCoat>
+      <Apparel_PackBandwidth>1</Apparel_PackBandwidth>
+    </costList>
+    <thingCategories>
+      <li>ApparelMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>2.5</Mass>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Post_DusterUpgrade/Post_DusterUpgrade</wornGraphicPath>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>IndustrialAdvanced</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
 </Defs>
